@@ -1,0 +1,84 @@
+$background-light : #fff;
+$background-dark: #333;
+$accent-color: #199dd0;
+$link-color : darken($accent-color, 10%);
+
+body {
+  background-color: lighten($accent-color, 20%);
+}
+
+.container {
+  width: 710px;
+}
+
+header {
+  padding-top: 20px;
+
+  img{
+    padding: 1em;
+    background: $background-light;
+  }
+}
+
+section {
+  margin-top: 1em;
+  font-size: 16px;
+  padding: 20px;
+  background: $background-light;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: #069;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: #069;
+  }
+}
+
+nav {
+  float: right;
+  background-color: $background-light;
+  padding: 0 1em;
+  white-space: nowrap;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 2em;
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.signup-button {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: $background-light;
+  background: $accent-color;
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 1em;
+
+  &:hover {
+    text-decoration: none;
+    background-color: darken($accent-color, 10%);
+    color: #fff;
+  }
+}
+
+.round {
+  border-radius: 5px;
+}
