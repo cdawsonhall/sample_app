@@ -2,29 +2,15 @@
 %html{:lang => "utf-8"}
   %head
     %title #{title}
-    /[if lt IE 9]
-      %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
-		
-    = stylesheet_link_tag "blueprint/screen", :media => "screen"
-    = stylesheet_link_tag "blueprint/print", :media => "print"
-    /[if lt IE 8]
-      = stylesheet_link_tag "blueprint/ie"
-    = stylesheet_link_tag "custom", :media => "screen"
+    
+    = render "layouts/stylesheets"
 
     = csrf_meta_tag
     = javascript_include_tag "application"
 
   %body
     .container
-      %header
-        %img.round{:src => "/images/logo.png", :alt => "Sample App"}
-        %nav.round
-          %ul
-            %li
-              %a{:href => "#"} Home
-            %li
-              %a{:href => "#"} Help
-            %li
-              %a{:href => "#"} Sign In
+      = render "layouts/header"
       %section.round
         = yield
+      = render "layouts/footer"

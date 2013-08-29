@@ -52,7 +52,7 @@ nav {
     li {
       list-style: none;
       display: inline-block;
-      padding: 2em;
+      padding: 0.5em 1em;
 
       a:hover {
         text-decoration: underline;
@@ -81,4 +81,14 @@ nav {
 
 .round {
   border-radius: 5px;
+}
+
+footer nav {
+  margin: 10px auto;
+  float: none;
+  display: block;
+
+  li {
+    margin: 0.5em 0.5em;
+  }
 }
