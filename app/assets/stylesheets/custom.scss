@@ -77,6 +77,9 @@ nav {
     background-color: darken($accent-color, 10%);
     color: #fff;
   }
+  &:visited {
+    color: $background-light;
+  }
 }
 
 .round {
