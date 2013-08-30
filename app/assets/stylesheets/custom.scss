@@ -3,6 +3,10 @@ $background-dark: #333;
 $accent-color: #199dd0;
 $link-color : darken($accent-color, 10%);
 
+@mixin rounded {
+  border-radius: 5px;
+}
+
 body {
   background-color: lighten($accent-color, 20%);
 }
@@ -96,6 +100,8 @@ footer nav {
   }
 }
 
+// =================== User Profile Page ===================
+
 section h1 {
   font-size: 2em;
 }
@@ -121,3 +127,28 @@ section h1 {
   border-radius: 5px
 }
 
+// =================== User Signup Page ===================
+
+.signup-form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  font-size: 16px;
+  padding: 0.5em 0;
+  margin: 4px 0 19px 0;
+  width: 100%;
+  @include rounded;
+
+}
+
+.actions input[type=submit] {
+  font-size: 32px;
+  padding: .25em 2em;
+  background-color: $accent-color;
+  color: $background-light;
+  text-transform: uppercase;  
+  width: 100%;
+  @include rounded;
+}
