@@ -99,3 +99,25 @@ footer nav {
 section h1 {
   font-size: 2em;
 }
+
+.main-info {
+  display: inline-block;
+}
+
+.more-info {
+  float: right;
+  display: block;
+  background: lighten($accent-color, 45%);
+  padding: 1em;
+
+  p {
+    margin-bottom: 0.25em;
+    font-size: 12px;
+  }
+}
+
+.gravatar {
+  margin-bottom: -15px;
+  border-radius: 5px
+}
+

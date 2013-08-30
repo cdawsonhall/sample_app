@@ -1,3 +1,11 @@
-%h1 
-  = gravatar_for @user
-  #{@user.name}
+.main-info
+  %h1 
+    = gravatar_for @user
+    #{@user.name}
+.more-info.round.clearfix
+  %p 
+    %strong Name 
+    = @user.name
+  %p
+    %strong URL 
+    = link_to user_path(@user), @user
