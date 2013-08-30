@@ -12,6 +12,10 @@
     .container
       = render "layouts/header"
       %section.round.clearfix
+        - flash.each do |key, value|
+          .flash{ :class => "#{key}" }
+            %p 
+              = value
         = yield
       = render "layouts/footer"
       = debug(params) if Rails.env.development?

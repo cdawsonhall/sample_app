@@ -9,6 +9,13 @@ $link-color : darken($accent-color, 10%);
 
 body {
   background-color: lighten($accent-color, 20%);
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .container {
@@ -151,4 +158,40 @@ input[type=text], input[type=email], input[type=password] {
   text-transform: uppercase;  
   width: 100%;
   @include rounded;
+}
+
+// =================== Errors Partial ===================
+
+#error-explanation {
+  background-color: #ffe0e0;
+  border-radius: 5px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  border: 1px solid #FF7E7E;
+  @include rounded;
+}
+
+.field_with_errors input, .field_with_errors label{
+  color: #FF7E7E;
+}
+
+.field_with_errors input {
+  border: 1px solid #FF7E7E;
+}
+
+
+#error-explanation p, #error-explanation li {
+font-size: 12px;
+margin: 0.5em 0;
+padding-left: 0;
+}
+
+#error-explanation li {
+  color: #ec6363;
+  font-weight: 700;
+}
+
+#error-explanation h2 {
+font-size: 1em;
+margin-bottom: 0;
 }
