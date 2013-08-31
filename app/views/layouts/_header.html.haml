@@ -4,7 +4,14 @@
     %ul
       %li
         %a{:href => "#"} Home
+      - if signed_in?
+        %li 
+          = link_to "Profile", current_user
       %li
         %a{:href => "#"} Help
-      %li
-        %a{:href => "#"} Sign In
+      - if signed_in?
+        %li 
+          = link_to "Sign Out", signout_path
+      - else
+        %li
+          = link_to "Sign in", signin_path
