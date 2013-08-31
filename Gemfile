@@ -46,5 +46,6 @@ group :test do
 	gem 'rspec'
   gem 'factory_girl_rails', '4.2.0'
   gem 'webrat'
+  gem 'capybara'
 end
 gem "haml"

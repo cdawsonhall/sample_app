@@ -116,6 +116,7 @@ describe User do
     end
 
     describe "has_password? method" do
+      
       it "should exist" do
         @user.should respond_to(:has_password?)
       end
