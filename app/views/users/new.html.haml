@@ -2,19 +2,7 @@
   %h1 Sign Up
   = form_for(@user) do |f|
     
-    = render 'shared/error_messages'
+    = render 'fields', :f => f
 
-    .field
-      = f.label :name
-      = f.text_field :name
-    .field
-      = f.label :email
-      = f.email_field :email
-    .field
-      = f.label :password
-      = f.password_field :password
-    .field
-      = f.label :password_confirmation, "Password Again"
-      = f.password_field :password_confirmation
     .actions
       = f.submit "Sign Up!"
