@@ -195,3 +195,14 @@ padding-left: 0;
 font-size: 1em;
 margin-bottom: 0;
 }
+
+// =================== Users Index List ===================
+
+.users {
+  li {
+    margin: 30px
+  }
+  .gravatar {
+    margin-bottom: -10px;
+  }
+}
